@@ -38,51 +38,19 @@ To deploy and run the "Edit Karo" app, follow these steps:
 git clone https://github.com/your-username/edit-karo.git
 cd edit-karo
 
-## Configure the Project
+## Deployment
 
-1. **Environment Variables**: Ensure you have the necessary environment variables set up. Copy the `.env.example` file to a new file named `.env` and fill in the required values. This file might include API keys, database URLs, and other configuration settings.
+To deploy and run the "Edit Karo" app, follow these steps:
 
-    ```bash
-    cp .env.example .env
-    ```
+### Configure the Project
 
-2. **Permissions**: For Android and iOS development, make sure that your app has the correct permissions set up to access the camera and gallery. These permissions should be configured in your `AndroidManifest.xml` (for Android) and `Info.plist` (for iOS).
+1. **Environment Variables**:
+   - Copy the `.env.example` file to a new file named `.env`.
+   - Update the `.env` file with your specific environment variables and API keys.
 
-3. **API Keys**: If your app uses third-party services, insert the required API keys into the `.env` file. Ensure these keys are kept secure and not hardcoded in the source code.
-
-## Build the App
-
-Once the project is configured, you can build the app for your target platform.
+### Build the App
 
 - **For Android**:
-
-    ```bash
-    npx react-native run-android
-    ```
-
-    This command will build the app and launch it on an Android emulator or a connected Android device.
-
-- **For iOS**:
-
-    ```bash
-    npx react-native run-ios
-    ```
-
-    This command will build the app and launch it on an iOS simulator or a connected iOS device. Alternatively, you can use Xcode to build and run the app.
-
-## Running the App
-
-After building, start the app on your emulator or physical device. You should see the main interface of "Edit Karo," where you can capture new photos, select existing ones, apply filters, crop images, and save the edited photos.
-
-## Additional Configuration
-
-- **API Keys**: Double-check that all API keys and other sensitive information are correctly set in the `.env` file.
-- **Permissions**: Ensure that your app has the necessary permissions for accessing the camera and gallery. You may need to adjust settings on your device or emulator to grant these permissions.
-
-## Troubleshooting
-
-- **Build Issues**: If you encounter build errors, refer to the [Troubleshooting Guide](#) or file an issue in the repository for support.
-- **Runtime Errors**: For runtime errors or unexpected behavior, check the app logs for detailed error messages and consult the [Common Issues](#) section for potential solutions.
-
-For more information and detailed documentation, please refer to the [Documentation](#).
+  ```bash
+  npx react-native run-android
 
